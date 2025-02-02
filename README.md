@@ -30,3 +30,10 @@ export KUBECONFIG=~/.kube/config
 
 Problem was a faulty kubeconfig configurattion
 Also had to disable ufw
+
+## Setup the control plane cluste in you primary 
+Copy the `~/.kube/config` on your remote machine to you primary machine same path `~/.kube/config
+then replace the value of the `server: https:<ip>:6443` to your remote machine Ip, now you can manage your remote machine cluster to your primary machine 
+note: Installt the kubectl on your primary machine using the below Installation link
+https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+
